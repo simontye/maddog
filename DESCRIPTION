@@ -1,0 +1,15 @@
+Package: maddog
+Version: 1.0
+Type: Package
+Title: MD 20_20 Color Palettes
+Description: An assortment of color palettes based on flavors of MD 20_20 <http://www.ghettowine.com>.This package is unaffiliated with MD 20_20 and 20_20 Wine Company. The code is based on the RColorBrewer package. See inst/COPYRIGHTS for more information.
+Authors@R: c(person("Simon", "Tye", email = "simontye@uark.edu", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-2131-8267")))
+Depends: R (>= 3.6)
+Imports: ggplot2
+Suggests: RColorBrewer
+Encoding: UTF-8
+LazyData: true
+License: MIT + file LICENSE
+Copyright: This package is unaffiliated with MD 20_20 and the 20_20 Wine Company, and
+	based on ColorBrewer. See inst/COPYRIGHTS for more information.
+URL: https://www.simontye.com
