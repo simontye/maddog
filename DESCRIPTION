@@ -13,3 +13,4 @@ License: MIT + file LICENSE
 Copyright: This package is unaffiliated with MD 20_20 and the 20_20 Wine Company, and
 	based on ColorBrewer. See inst/COPYRIGHTS for more information.
 URL: https://www.simontye.com
+RoxygenNote: 7.1.1
