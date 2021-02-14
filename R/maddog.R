@@ -34,150 +34,189 @@ maddog <- function(name, n) {
     warning(paste("Maximum value for n in palette",name,"is",col.max[which(name == list.name)]),". Returning palette with maximum levels\n")
     return(name, maddog(col.max[which(name == list.name)]))}
   switch(name,
-         north = switch(n-2,
-                       rgb(c(214, 0,   139),
-                           c(152, 151, 177),
-                           c(41,  158, 78),
+        north = switch(n-2,
+                       rgb(c(205, 65,  98),
+                           c(154, 149, 125),
+                           c(66,  156, 66),
                            maxColorValue = 255),
-                       rgb(c(214, 183, 0,   139),
-                           c(152, 86,  151, 177),
-                           c(41,  63,  158, 78),
+                       rgb(c(205, 65,  171, 98),
+                           c(154, 149, 91,  125),
+                           c(66,  156, 70,  66),
                            maxColorValue = 255),
-                       rgb(c(214, 183, 61,  0,   139),
-                           c(152, 86,  100, 151, 177),
-                           c(41,  63,  81,  158, 78),
+                       rgb(c(205, 65,  171, 147, 98),
+                           c(154, 149, 91,  176, 125),
+                           c(66,  156, 70,  92,  66),
                            maxColorValue = 255),
-                       rgb(c(214, 183, 61,  0,   139, 111),
-                           c(152, 86,  100, 151, 177, 96),
-                           c(41,  63,  81,  158, 78,  96),
+                       rgb(c(205, 65,  171, 147, 98,  102),
+                           c(154, 149, 91,  176, 125, 40),
+                           c(66,  156, 70,  92,  66,  93),
                            maxColorValue = 255)),
-         south = switch(n-2,
-                        rgb(c(181, 0,  78),
-                            c(35, 151, 26),
-                            c(37, 158, 26),
-                            maxColorValue = 255),
-                        rgb(c(222, 181, 0,   78),
-                            c(216, 35,  151, 26),
-                            c(142, 37,  158, 26),
-                            maxColorValue = 255),
-                        rgb(c(222, 181, 204, 0,   78),
-                            c(216, 35,  174, 151, 26),
-                            c(142, 37,  106, 158, 26),
-                            maxColorValue = 255),
-                        rgb(c(222, 181, 204, 136, 0,   78),
-                            c(216, 35,  174, 25,  151, 26),
-                            c(142, 37,  106, 27,  158, 26),
-                            maxColorValue = 255)),
-         east = switch(n-2,
-                       rgb(c(219, 0,   214),
-                           c(53,  151, 152),
-                           c(39,  158, 41),
+        south = switch(n-2,
+                       rgb(c(167, 205, 72),
+                           c(49,  154, 29),
+                           c(45,  66,  28),
                            maxColorValue = 255),
-                       rgb(c(219, 0,   214, 90),
-                           c(53,  151, 152, 127),
-                           c(39,  158, 41,  57),
+                       rgb(c(167, 205, 171, 72),
+                           c(49,  154, 91,  29),
+                           c(45,  66,  70,  28),
                            maxColorValue = 255),
-                       rgb(c(219, 0,   139, 214, 90),
-                           c(53,  151, 177, 152, 127),
-                           c(39,  158, 78,  41,  57),
+                       rgb(c(167, 205, 171, 221, 72),
+                           c(49,  154, 91,  215, 29),
+                           c(45,  66,  70,  151, 28),
                            maxColorValue = 255),
-                       rgb(c(219, 0,   139, 214, 90,  111),
-                           c(53,  151, 177, 152, 127, 33),
-                           c(39,  158, 78,  41,  57,  96),
+                       rgb(c(167, 205, 171, 221, 72, 200),
+                           c(49,  154, 91,  215, 29, 174),
+                           c(45,  66,  70,  151, 28, 115),
                            maxColorValue = 255)),
-         west = switch(n-2,
-                       rgb(c(214, 0,   111),
-                           c(113, 151, 33),
-                           c(47,  158, 96),
+        east = switch(n-2,
+                       rgb(c(202, 65,  70),
+                           c(68,  149, 99),
+                           c(51,  156, 83),
                            maxColorValue = 255),
-                       rgb(c(214, 0,   90, 111),
-                           c(113, 151, 127, 33),
-                           c(47,  158, 57,  96),
+                       rgb(c(202, 65,  221, 70),
+                           c(68,  149, 215, 99),
+                           c(51,  156, 151, 83),
                            maxColorValue = 255),
-                       rgb(c(214, 0,   90,  183, 111),
-                           c(113, 151, 127, 86,  33),
-                           c(47,  158, 57,  63,  96),
+                       rgb(c(202, 65,  221, 171, 70),
+                           c(68,  149, 215, 91,  99),
+                           c(51,  156, 151, 70,  83),
                            maxColorValue = 255),
-                       rgb(c(214, 0,   214, 90,  183, 111),
-                           c(113, 151, 152, 127, 86,  33),
-                           c(47,  158, 41,  57,  63,  96),
+                       rgb(c(202, 65,  221, 171, 70, 102),
+                           c(68,  149, 215, 91,  99, 40),
+                           c(51,  156, 151, 70,  83, 93),
                            maxColorValue = 255)),
-         rainbow = switch(n-2,
-                        rgb(c(0,   214, 181),
-                            c(151, 152, 35),
-                            c(158, 42,  37),
+        west = switch(n-2,
+                       rgb(c(205, 65,  125),
+                           c(154, 149, 36),
+                           c(66,  156, 33),
+                           maxColorValue = 255),
+                       rgb(c(205, 65,   171, 125),
+                           c(154, 149, 91,  36),
+                           c(66,  156, 70,  33),
+                           maxColorValue = 255),
+                       rgb(c(205, 65,   171, 111, 125),
+                           c(154, 149, 91,  33,  36),
+                           c(66,  156, 70,  96,  33),
+                           maxColorValue = 255),
+                       rgb(c(205, 65,   171, 111, 125, 70),
+                           c(154, 149, 91,  33,  36,  99),
+                           c(66,  156, 70,  96,  33,  83),
+                           maxColorValue = 255)),
+        rainbow = switch(n-2,
+                        rgb(c(65,  214, 183),
+                            c(149, 152, 86),
+                            c(156, 41,  63),
                             maxColorValue = 255),
-                        rgb(c(0,   92,  214, 181),
-                            c(151, 174, 152, 35),
-                            c(158, 88,  41,  37),
+                        rgb(c(65,  112, 214, 183),
+                            c(149, 171, 152, 86),
+                            c(156, 98,  41,  63),
                             maxColorValue = 255),
-                        rgb(c(0,   92,  214, 214, 181),
-                            c(151, 174, 152, 113, 35),
-                            c(158, 88,  41,  47,  37),
+                        rgb(c(102, 65,  112, 214, 183),
+                            c(40,  149, 171, 152, 86),
+                            c(93,  185, 98,  41,  63),
                             maxColorValue = 255),
-                        rgb(c(111, 0,   92,  214, 214, 181),
-                            c(33,  151, 174, 152, 113, 35),
-                            c(96,  158, 88,  41,  47,  37),
+                        rgb(c(102, 65,  112, 214, 201, 183),
+                            c(40,  149, 171, 152, 118, 86),
+                            c(93,  156, 98,  41,  63,  63),
                             maxColorValue = 255),
-                        rgb(c(111, 0,   92,  139, 214, 214, 181),
-                            c(33,  151, 174, 177, 152, 113, 35),
-                            c(96,  158, 88,  78,  41,  47,  37),
+                        rgb(c(102, 65,  112, 147, 214, 201, 183),
+                            c(40,  149, 171, 176, 152, 118, 86),
+                            c(93,  156, 98,  92,  41,  63,  63),
                             maxColorValue = 255),
-                        rgb(c(111, 61,  0,   92,  139, 214, 214, 181),
-                            c(33,  100, 151, 174, 177, 152, 113, 35),
-                            c(96,  81,  158, 88,  78,  41,  47,  37),
+                        rgb(c(102, 70, 65,  112, 147, 214, 201, 183),
+                            c(40,  99, 149, 171, 176, 152, 118, 86),
+                            c(93,  83, 156, 98,  92,  41,  63,  63),
                             maxColorValue = 255),
-                        rgb(c(111, 61,  0,   92,  139, 214, 214, 181, 136),
-                            c(33,  100, 151, 174, 177, 152, 113, 35,  25),
-                            c(96,  81,  158, 88,  78,  41,  47,  37,  27),
+                        rgb(c(102, 70,  65,  112, 147, 214, 201, 183, 125),
+                            c(40,  99, 149,  171, 176, 152, 118, 86,  36),
+                            c(93,  83,  156, 98,  92,  41,  63,  63,  33),
                             maxColorValue = 255),
-                        rgb(c(111, 61,  0,   92,  139, 204, 214, 214, 181, 136),
-                            c(33,  100, 151, 174, 177, 174, 152, 113, 35,  25),
-                            c(96,  81,  158, 88,  78,  106, 41,  47,  37,  27),
+                        rgb(c(102, 70,  65, 112, 147, 200, 214, 201, 183, 125),
+                            c(40,  99, 149, 171, 176, 171, 152, 118, 86,  36),
+                            c(93,  83, 156, 98,  92,  115, 41,  63,  63,  33),
                             maxColorValue = 255)))}
 
 #######################################################################################
 
 # Make flavors
-redgrapewine    <- rgb(78,  26,  26,  maxColorValue = 255)
-dragonfruit     <- rgb(136, 25,  27,  maxColorValue = 255)
-redsangria      <- rgb(181, 35,  37,  maxColorValue = 255)
-cranberry       <- rgb(219, 53,  39,  maxColorValue = 255)
-tangerinedream  <- rgb(189, 59,  39,  maxColorValue = 255)
-rubygrapefruit  <- rgb(181, 35,  37,  maxColorValue = 255)
-peachesandcream <- rgb(214, 113, 47,  maxColorValue = 255)
-orangejubilee   <- rgb(214, 152, 41,  maxColorValue = 255)
-keylimepie      <- rgb(204, 174, 106, maxColorValue = 255)
-lightningcreek  <- rgb(222, 216, 142, maxColorValue = 255)
-sourapple       <- rgb(139, 177, 78,  maxColorValue = 255)
-spikedmelon     <- rgb(92,  174, 88,  maxColorValue = 255)
-kiwilemon       <- rgb(90,  127, 57,  maxColorValue = 255)
-blueraspberry   <- rgb(0,   151, 158, maxColorValue = 255)
-hawaiianblue    <- rgb(61,  100, 81,  maxColorValue = 255)
-purplerain      <- rgb(111, 33,  96,  maxColorValue = 255)
+redgrapewine    <- rgb(72,  29,  28,  maxColorValue = 255)
+dragonfruit     <- rgb(125, 36,  33,  maxColorValue = 255)
+redsangria      <- rgb(167, 49,  45,  maxColorValue = 255)
+cranberry       <- rgb(202, 68,  51,  maxColorValue = 255)
+tangerinedream  <- rgb(175, 69,  48,  maxColorValue = 255)
+rubygrapefruit  <- rgb(171, 91,  70,  maxColorValue = 255)
+peachesandcream <- rgb(201, 118, 63,  maxColorValue = 255)
+orangejubilee   <- rgb(205, 154, 66,  maxColorValue = 255)
+keylimepie      <- rgb(200, 174, 115, maxColorValue = 255)
+lightningcreek  <- rgb(221, 215, 151, maxColorValue = 255)
+sourapple       <- rgb(147, 176, 92,  maxColorValue = 255)
+spikedmelon     <- rgb(112, 171, 98,  maxColorValue = 255)
+kiwilemon       <- rgb(98,  125, 66,  maxColorValue = 255)
+blueraspberry   <- rgb(65,  149, 156, maxColorValue = 255)
+hawaiianblue    <- rgb(70,  99, 83,  maxColorValue = 255)
+purplerain      <- rgb(102, 40,  93,  maxColorValue = 255)
+
+#purplerain      <- rgb(102, 40,  93,  maxColorValue = 255)
+#hawaiianblue    <- rgb(70,  99, 83,  maxColorValue = 255)
+#blueraspberry   <- rgb(65,  149, 156, maxColorValue = 255)
+#spikedmelon     <- rgb(112, 171, 98,  maxColorValue = 255)
+#sourapple       <- rgb(147, 176, 92,  maxColorValue = 255)
+#keylimepie      <- rgb(200, 174, 115, maxColorValue = 255)
+#orangejubilee   <- rgb(205, 154, 66,  maxColorValue = 255)
+#peachesandcream <- rgb(201, 118, 63,  maxColorValue = 255)
+#redsangria      <- rgb(167, 49,  45,  maxColorValue = 255)
+#dragonfruit     <- rgb(125, 36,  33,  maxColorValue = 255)
+
+#orangejubilee   <- rgb(205, 154, 66,  maxColorValue = 255)
+#blueraspberry   <- rgb(65,  149, 156, maxColorValue = 255)
+#rubygrapefruit  <- rgb(171, 91,  70,  maxColorValue = 255)
+#sourapple       <- rgb(147, 176, 92,  maxColorValue = 255)
+#kiwilemon       <- rgb(98,  125, 66,  maxColorValue = 255)
+#purplerain      <- rgb(102, 40,  93,  maxColorValue = 255)
+
+#redsangria      <- rgb(167, 49,  45,  maxColorValue = 255)
+#orangejubilee   <- rgb(205, 154, 66,  maxColorValue = 255)
+#rubygrapefruit  <- rgb(171, 91,  70,  maxColorValue = 255)
+#lightningcreek  <- rgb(221, 215, 151, maxColorValue = 255)
+#redgrapewine    <- rgb(72,  29,  28,  maxColorValue = 255)
+#keylimepie      <- rgb(200, 174, 115, maxColorValue = 255)
+
+#cranberry       <- rgb(202, 68,  51,  maxColorValue = 255)
+#blueraspberry   <- rgb(65,  149, 156, maxColorValue = 255)
+#lightningcreek  <- rgb(221, 215, 151, maxColorValue = 255)
+#rubygrapefruit  <- rgb(171, 91,  70,  maxColorValue = 255)
+#hawaiianblue    <- rgb(70,  99, 83,  maxColorValue = 255)
+#purplerain      <- rgb(102, 40,  93,  maxColorValue = 255)
+
+#orangejubilee   <- rgb(205, 154, 66,  maxColorValue = 255)
+#blueraspberry   <- rgb(65,  149, 156, maxColorValue = 255)
+#rubygrapefruit  <- rgb(171, 91,  70,  maxColorValue = 255)
+#purplerain      <- rgb(102, 40,  93,  maxColorValue = 255)
+#dragonfruit     <- rgb(125, 36,  33,  maxColorValue = 255)
+#hawaiianblue    <- rgb(70,  99, 83,  maxColorValue = 255)
 
 # Save flavors
-# usethis::use_data(redgrapewine)
-# usethis::use_data(dragonfruit)
-# usethis::use_data(redsangria)
-# usethis::use_data(cranberry)
-# usethis::use_data(tangerinedream)
-# usethis::use_data(rubygrapefruit)
-# usethis::use_data(peachesandcream)
-# usethis::use_data(orangejubilee)
-# usethis::use_data(keylimepie)
-# usethis::use_data(lightningcreek)
-# usethis::use_data(sourapple)
-# usethis::use_data(spikedmelon)
-# usethis::use_data(kiwilemon)
-# usethis::use_data(blueraspberry)
-# usethis::use_data(hawaiianblue)
-# usethis::use_data(purplerain)
+#usethis::use_data(redgrapewine, overwrite = TRUE)
+#usethis::use_data(dragonfruit, overwrite = TRUE)
+#usethis::use_data(redsangria, overwrite = TRUE)
+#usethis::use_data(cranberry, overwrite = TRUE)
+#usethis::use_data(tangerinedream, overwrite = TRUE)
+#usethis::use_data(rubygrapefruit, overwrite = TRUE)
+#usethis::use_data(peachesandcream, overwrite = TRUE)
+#usethis::use_data(orangejubilee, overwrite = TRUE)
+#usethis::use_data(keylimepie, overwrite = TRUE)
+#usethis::use_data(lightningcreek, overwrite = TRUE)
+#usethis::use_data(sourapple, overwrite = TRUE)
+#usethis::use_data(spikedmelon, overwrite = TRUE)
+#usethis::use_data(kiwilemon, overwrite = TRUE)
+#usethis::use_data(blueraspberry, overwrite = TRUE)
+#usethis::use_data(hawaiianblue, overwrite = TRUE)
+#usethis::use_data(purplerain, overwrite = TRUE)
 
 #######################################################################################
 
-# Function: displays particular maddog color palette
-#maddog.palette <- function(n, name) {
+# Function: displays specific maddog color palette
+#maddog_palette <- function(n, name) {
 #  if(!(name %in% list.name)) {
 #    stop(paste(name,"is not a valid palette name for maddog\n"))}
 #
@@ -198,7 +237,7 @@ purplerain      <- rgb(111, 33,  96,  maxColorValue = 255)
 maddog_flavors <- function(n = NULL, type = "all", select = NULL, exact.n = TRUE) {
   flav.list = c("redgrapewine", "dragonfruit", "redsangria",
                 "cranberry", "tangerinedream", "rubygrapefruit",
-                "peachesandcrea", "orangejubilee", "keylimepie",
+                "peachesandcream", "orangejubilee", "keylimepie",
                 "lightningcreek", "sourapple", "spikedmelon",
                 "kiwilemon", "blueraspberry", "hawaiianblue",
                 "purplerain")
