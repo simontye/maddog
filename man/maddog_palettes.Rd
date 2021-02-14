@@ -1,16 +1,18 @@
-\name{maddog}
-\alias{maddog}
-\title{Maddog color palettes}
-\description{Returns a color palette based on flavors of MD 20_20.}
-\usage{maddog(name, n)
+\name{maddog_palettes}
+\alias{maddog_palettes}
+\title{Prints all maddog color palettes}
+\description{Prints all color palettes based on flavors of MD 20_20.}
+\usage{maddog_palettes(n, type, select, exact.n)
 }
 \arguments{
-\item{name}{name of a color palette}
-\item{n}{number of colors (variables)}
+\item{n}{set to NULL}
+\item{type}{set to"div" for geographical palettes, "seq" for the rainbow palette, or "all" for all palettes}
+\item{select}{set to NULL}
+\item{exact.n}{set to TRUE}
 }
-\details{Returns a color palette based on flavors of MD 20_20
+\details{Prints all color palettes based on flavors of MD 20_20
 }
-\value{\code{maddog} returns a list of colors based on the chosen palette and number of variables. Palette options include "north", "south", "east", "west", and "rainbow".
+\value{\code{maddog_palettes} prints all color palettes based on flavors of MD 20_20.
 }
 \seealso{\code{\link{maddog_palettes}}}
 \examples{

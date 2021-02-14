@@ -1,1 +1,5 @@
-exportPattern("^[[:alpha:]]+")
+export(maddog, maddog_flavors, maddog_palettes, redgrapewine, dragonfruit, redsangria, cranberry, tangerinedream, rubygrapefruit, peachesandcream, orangejubilee, keylimepie, lightningcreek, sourapple, spikedmelon, kiwilemon, blueraspberry, hawaiianblue, purplerain)
+
+importFrom("grDevices", "col2rgb", "dev.new", "rgb")
+importFrom("graphics", "image", "par", "plot", "arrows", "locator", "plot.new", "points", "rect", "segments", "text")
+importFrom("stats", "cov2cor", "rbinom", "runif")
